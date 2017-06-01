@@ -1,0 +1,591 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  color: #313131;
+  font-family: 'Roboto';
+  font-size: 24px;
+  line-height: 26px;
+  background-color: #f0f4f8;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+/*
+These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+*/
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+*/
+/*
+The `retina-sprite` class sets up rules and a media query for a sprite/retina sprite.
+  It should be used with a "retina group" variable.
+
+The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+@icon-home-group: 'icon-home' @icon-home @icon-home-2x;
+
+.icon-home {
+  .retina-sprite(@icon-home-group);
+}
+*/
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+/*
+The `.retina-sprites` mixin generates a CSS rule and media query for retina groups
+  This yields the same output as CSS retina template but can be overridden in LESS
+
+.retina-sprites(@retina-groups);
+*/
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 70px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.title {
+  height: 40px;
+  background-color: #375d85;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 33px;
+  position: relative;
+  font-weight: 300;
+  margin: 20px 0;
+}
+.title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #d9933b;
+  width: 10px;
+  height: 40px;
+}
+.small {
+  font-size: 20px;
+  line-height: 20px;
+  color: #4e4e4e;
+}
+.site-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.site-header__avatar {
+  width: 221px;
+  height: 221px;
+  border: 6px solid #d9933b;
+  border-radius: 50%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.site-header__name {
+  font-size: 29px;
+  margin-top: 15px;
+  color: #d9933b;
+  font-weight: 700;
+}
+.site-header__position {
+  margin-top: 11px;
+  color: #375d85;
+  font-size: 29px;
+}
+.site-header__description {
+  text-align: center;
+  margin-top: 33px;
+}
+.photo {
+  background: url(../img/ava.jpg) center no-repeat;
+  width: 177px;
+  height: 177px;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.education {
+  margin-top: 200px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+.education__line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: #375d85;
+}
+.education__line::before,
+.education__line::after {
+  content: '';
+  background-color: #375d85;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  position: absolute;
+  top: -8px;
+}
+.education__line::before {
+  left: 0;
+}
+.education__line::after {
+  right: 0;
+}
+.education__info {
+  text-align: center;
+  margin: 0 27px;
+  padding-top: 27px;
+  position: relative;
+}
+.education__info::before {
+  content: '';
+  width: 22px;
+  height: 22px;
+  background-color: #f0f4f8;
+  border: 2px solid #2c3e50;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: calc(50% - 12px);
+}
+.education__info::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -170px;
+  left: calc(50% - 71px);
+}
+.education__info--academy::after {
+  background-image: url(../img/sprite.png);
+  background-position: -142px 0px;
+  width: 142px;
+  height: 142px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .education__info--academy::after {
+    background-image: url(../img/sprite-retina.png);
+    background-size: 426px 426px;
+  }
+}
+.education__info--fac::after {
+  background-image: url(../img/sprite.png);
+  background-position: -284px -284px;
+  width: 142px;
+  height: 142px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .education__info--fac::after {
+    background-image: url(../img/sprite-retina.png);
+    background-size: 426px 426px;
+  }
+}
+.education__info--spec::after {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -142px;
+  width: 142px;
+  height: 142px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .education__info--spec::after {
+    background-image: url(../img/sprite-retina.png);
+    background-size: 426px 426px;
+  }
+}
+.info-experience {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 70px;
+}
+.info--big {
+  width: 40%;
+}
+.info__work {
+  margin-top: 25px;
+}
+.info__personal {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 25px;
+}
+.info__key {
+  width: 116px;
+  display: block;
+}
+.info__value {
+  margin-left: 20px;
+}
+.prof-skills {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 70px;
+}
+.prof-skills__group {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.prof-skills__rate {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 102px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.prof-skills__exp {
+  width: 14px;
+  height: 15px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid #d9933b;
+}
+.prof-skills__exp--active {
+  background-color: #d9933b;
+}
+.info--small {
+  width: 25%;
+}
+.hobbies {
+  margin-top: 70px;
+}
+.hobbies__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.hobbies__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 0 20px;
+}
+.hobbies__item::before {
+  content: '';
+  display: block;
+  margin-bottom: 20px;
+}
+.hobbies__item:nth-child(1)::before {
+  background-image: url(../img/sprite.png);
+  background-position: -142px -284px;
+  width: 142px;
+  height: 142px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hobbies__item:nth-child(1)::before {
+    background-image: url(../img/sprite-retina.png);
+    background-size: 426px 426px;
+  }
+}
+.hobbies__item:nth-child(2)::before {
+  background-image: url(../img/sprite.png);
+  background-position: -142px -142px;
+  width: 142px;
+  height: 142px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hobbies__item:nth-child(2)::before {
+    background-image: url(../img/sprite-retina.png);
+    background-size: 426px 426px;
+  }
+}
+.hobbies__item:nth-child(3)::before {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -284px;
+  width: 142px;
+  height: 142px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hobbies__item:nth-child(3)::before {
+    background-image: url(../img/sprite-retina.png);
+    background-size: 426px 426px;
+  }
+}
+.hobbies__item:nth-child(4)::before {
+  background-image: url(../img/sprite.png);
+  background-position: -284px 0px;
+  width: 142px;
+  height: 142px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hobbies__item:nth-child(4)::before {
+    background-image: url(../img/sprite-retina.png);
+    background-size: 426px 426px;
+  }
+}
+.hobbies__item:nth-child(5)::before {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 142px;
+  height: 142px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hobbies__item:nth-child(5)::before {
+    background-image: url(../img/sprite-retina.png);
+    background-size: 426px 426px;
+  }
+}
+.hobbies__item:nth-child(6)::before {
+  background-image: url(../img/sprite.png);
+  background-position: -284px -142px;
+  width: 142px;
+  height: 142px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hobbies__item:nth-child(6)::before {
+    background-image: url(../img/sprite-retina.png);
+    background-size: 426px 426px;
+  }
+}
