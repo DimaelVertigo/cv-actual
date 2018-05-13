@@ -533,7 +533,7 @@ a {
   right: -10px;
 }
 .hobbies {
-  padding: 0 15px;
+  padding: 25px 15px;
 }
 .hobbies__list {
   display: -ms-flexbox;
@@ -551,7 +551,6 @@ a {
   -ms-flex-align: center;
       align-items: center;
   text-align: center;
-  margin: 0 20px;
 }
 @media only screen and (min-width : 320px) and (max-width : 768px) {
   .hobbies__item {
