@@ -8,6 +8,8 @@ body {
 	user-select: text;
 	font-family: 'Roboto', 'Arial', sans-serif;
 	color: @brand;
+	font-size: 1rem;
+	line-height: 1.8rem;
 }
 
 * {
@@ -17,10 +19,9 @@ body {
 .wrapper {
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 70px 0;
+	padding: 35px 0;
 	display: flex;
 	flex-direction: column;
-	font-size: 2rem;
 	overflow: hidden;
 	@media @mobile {
 		font-size: 1.7rem;
@@ -42,7 +43,6 @@ a {
 	position: relative;
 	font-weight: 300;
 	margin: 20px 0;
-	font-size: 2rem;
 	&::before {
 		content: '';
 		position: absolute;
@@ -54,7 +54,6 @@ a {
 	}
 }
 .small {
-	font-size: 2rem;
 	line-height: 20px;
 	color: @gray;
 }

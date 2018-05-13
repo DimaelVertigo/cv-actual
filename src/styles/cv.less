@@ -6,8 +6,8 @@
 	align-items: center;
 	
 	&__avatar {
-		width: 250px;
-		height: 250px;
+		width: 150px;
+		height: 150px;
 		border: 6px solid @orange;
 		border-radius: 50%;
 		overflow: hidden;
@@ -17,7 +17,7 @@
 		.transition();
 		position: relative;
 		@media print {
-			display: none;
+			//display: none;
 			//&::after {
 			//	content: 'Bad black and white Printer';
 			//	display: block;
@@ -35,7 +35,7 @@
 		}
 	}
 	&__name {
-		font-size: 2.9rem;
+		font-size: 1.9rem;
 		margin-top: 15px;
 		color: @orange;
 		font-weight: 700;
@@ -43,15 +43,16 @@
 	&__position {
 		margin-top: 11px;
 		color: @blue;
-		font-size: 2.9rem;
+		font-size: 1.9rem;
 	}
 	&__description {
 		text-align: center;
 		margin-top: 33px;
 	}
 }
+
 .photo {
-	background: url(../images/ava.jpg) center 40px no-repeat;
+	background: url(../images/ava.jpg) center 29px no-repeat;
 	width: 100%;
 	height: 100%;
 	background-size: cover;
@@ -63,7 +64,7 @@
 }
 
 .education {
-	margin-top: 200px;
+	margin-top: 160px;
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -117,16 +118,16 @@
 	}
 	&__icon {
 		position: absolute;
-		top: -180px;
-		left: calc(~'50% - 75px');
+		top: -130px;
+		left: calc(~'50% - 50px');
 		@media @mobile {
 			top: -100px;
 			left: calc(~'50% - 35px');
 		}
 		svg {
-			width: 150px;
-			height: 150px;
-
+			width: 100px;
+			height: 100px;
+			
 			@media @mobile {
 				width: 70px;
 				height: 70px;
@@ -138,17 +139,16 @@
 .info-experience {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 70px;
+	margin-top: 35px;
 	flex-wrap: wrap;
 }
+
 .info {
 	&--big {
 		width: 40%;
 	}
 	&__work {
 		margin-top: 25px;
-		font-size: 2rem;
-		
 	}
 	&__personal {
 		display: flex;
@@ -160,8 +160,10 @@
 	&__key {
 		min-width: 70px;
 		display: block;
-		font-size: 5.5rem;
+		font-size: 3rem;
+		line-height: 3.2rem;
 		font-weight: bold;
+		//margin-bottom: 15px;
 		color: @blue;
 		display: flex;
 		align-items: center;
@@ -172,16 +174,20 @@
 	}
 	&__value {
 		margin-left: 20px;
-		font-size: 2rem;
 	}
+}
+
+.main-skills {
+	margin-top: 50px;
 }
 
 .prof-skills {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 70px;
-	font-size: 2rem;
+	//margin-top: 70px;
+	//font-size: 2rem;
 	flex-wrap: wrap;
+	width: 100%;
 	
 	&__group {
 		margin-top: 20px;
@@ -205,13 +211,14 @@
 		}
 	}
 }
+
 .info {
 	margin: 0 15px;
 	@media @mobile {
 		width: 100%;
 	}
 	&--small {
-		width: 25%;
+		width: 40%;
 		@media @mobile {
 			width: 100%;
 		}
@@ -219,6 +226,9 @@
 }
 
 .workplace {
+	&__name {
+		font-style: italic;
+	}
 	&__link {
 		display: flex;
 		align-items: center;
@@ -241,10 +251,10 @@
 		}
 	}
 	&__position {
-		margin-top: 5px;
 		margin-left: 10px;
 		position: relative;
 		display: inline-block;
+		font-style: italic;
 		&::before,
 		&::after {
 			.transition();
@@ -262,13 +272,12 @@
 }
 
 .hobbies {
-	margin-top: 70px;
+	//margin-top: 35px;
 	padding: 0 15px;
 	&__list {
 		display: flex;
 		justify-content: space-around;
-		font-size: 2rem;
-		padding-top: 20px;
+		//padding-top: 20px;
 		flex-wrap: wrap;
 	}
 	&__item {
@@ -287,10 +296,10 @@
 		}
 	}
 	&__icon {
-		margin-bottom: 20px;
+		//margin-bottom: 15px;
 		svg {
-			width: 150px;
-			height: 150px;
+			width: 100px;
+			height: 100px;
 			.transition();
 		}
 	}

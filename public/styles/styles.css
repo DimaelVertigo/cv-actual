@@ -208,6 +208,8 @@ body {
           user-select: text;
   font-family: 'Roboto', 'Arial', sans-serif;
   color: #192f32;
+  font-size: 1rem;
+  line-height: 1.8rem;
 }
 * {
   box-sizing: border-box;
@@ -215,12 +217,11 @@ body {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 70px 0;
+  padding: 35px 0;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  font-size: 2rem;
   overflow: hidden;
 }
 @media only screen and (min-width : 320px) and (max-width : 768px) {
@@ -244,7 +245,6 @@ a {
   position: relative;
   font-weight: 300;
   margin: 20px 0;
-  font-size: 2rem;
 }
 .title::before {
   content: '';
@@ -256,7 +256,6 @@ a {
   height: 40px;
 }
 .small {
-  font-size: 2rem;
   line-height: 20px;
   color: #4e4e4e;
 }
@@ -271,8 +270,8 @@ a {
       align-items: center;
 }
 .site-header__avatar {
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   border: 6px solid #feaf77;
   border-radius: 50%;
   overflow: hidden;
@@ -286,9 +285,6 @@ a {
   position: relative;
 }
 @media print {
-  .site-header__avatar {
-    display: none;
-  }
 }
 .site-header__avatar:hover {
   border: 6px solid #64989a;
@@ -297,7 +293,7 @@ a {
   transform: scale(2.3);
 }
 .site-header__name {
-  font-size: 2.9rem;
+  font-size: 1.9rem;
   margin-top: 15px;
   color: #feaf77;
   font-weight: 700;
@@ -305,14 +301,14 @@ a {
 .site-header__position {
   margin-top: 11px;
   color: #64989a;
-  font-size: 2.9rem;
+  font-size: 1.9rem;
 }
 .site-header__description {
   text-align: center;
   margin-top: 33px;
 }
 .photo {
-  background: url(../images/ava.jpg) center 40px no-repeat;
+  background: url(../images/ava.jpg) center 29px no-repeat;
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -320,7 +316,7 @@ a {
   transition: all 0.5s ease-out;
 }
 .education {
-  margin-top: 200px;
+  margin-top: 160px;
   position: relative;
   display: -ms-flexbox;
   display: flex;
@@ -377,8 +373,8 @@ a {
 }
 .education__icon {
   position: absolute;
-  top: -180px;
-  left: calc(50% - 75px);
+  top: -130px;
+  left: calc(50% - 50px);
 }
 @media only screen and (min-width : 320px) and (max-width : 768px) {
   .education__icon {
@@ -387,8 +383,8 @@ a {
   }
 }
 .education__icon svg {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
 }
 @media only screen and (min-width : 320px) and (max-width : 768px) {
   .education__icon svg {
@@ -401,7 +397,7 @@ a {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  margin-top: 70px;
+  margin-top: 35px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -410,7 +406,6 @@ a {
 }
 .info__work {
   margin-top: 25px;
-  font-size: 2rem;
 }
 .info__personal {
   display: -ms-flexbox;
@@ -426,7 +421,8 @@ a {
 .info__key {
   min-width: 70px;
   display: block;
-  font-size: 5.5rem;
+  font-size: 3rem;
+  line-height: 3.2rem;
   font-weight: bold;
   color: #64989a;
   display: -ms-flexbox;
@@ -440,17 +436,18 @@ a {
 }
 .info__value {
   margin-left: 20px;
-  font-size: 2rem;
+}
+.main-skills {
+  margin-top: 50px;
 }
 .prof-skills {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  margin-top: 70px;
-  font-size: 2rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
 }
 .prof-skills__group {
   margin-top: 20px;
@@ -487,12 +484,15 @@ a {
   }
 }
 .info--small {
-  width: 25%;
+  width: 40%;
 }
 @media only screen and (min-width : 320px) and (max-width : 768px) {
   .info--small {
     width: 100%;
   }
+}
+.workplace__name {
+  font-style: italic;
 }
 .workplace__link {
   display: -ms-flexbox;
@@ -514,10 +514,10 @@ a {
   width: 100px;
 }
 .workplace__position {
-  margin-top: 5px;
   margin-left: 10px;
   position: relative;
   display: inline-block;
+  font-style: italic;
 }
 .workplace__position::before,
 .workplace__position::after {
@@ -533,7 +533,6 @@ a {
   right: -10px;
 }
 .hobbies {
-  margin-top: 70px;
   padding: 0 15px;
 }
 .hobbies__list {
@@ -541,8 +540,6 @@ a {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  font-size: 2rem;
-  padding-top: 20px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -564,11 +561,8 @@ a {
 .hobbies__item:hover svg {
   transform: scale(1.1);
 }
-.hobbies__icon {
-  margin-bottom: 20px;
-}
 .hobbies__icon svg {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   transition: all 0.2s ease-out;
 }
