@@ -1,0 +1,361 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@bike-name: 'bike';
+@bike-x: 0px;
+@bike-y: 0px;
+@bike-offset-x: 0px;
+@bike-offset-y: 0px;
+@bike-width: 142px;
+@bike-height: 142px;
+@bike-total-width: 426px;
+@bike-total-height: 426px;
+@bike-image: '../images/sprite/sprite-png.png';
+@bike: 0px 0px 0px 0px 142px 142px 426px 426px '../images/sprite/sprite-png.png' 'bike';
+@educ-name: 'educ';
+@educ-x: 142px;
+@educ-y: 0px;
+@educ-offset-x: -142px;
+@educ-offset-y: 0px;
+@educ-width: 142px;
+@educ-height: 142px;
+@educ-total-width: 426px;
+@educ-total-height: 426px;
+@educ-image: '../images/sprite/sprite-png.png';
+@educ: 142px 0px -142px 0px 142px 142px 426px 426px '../images/sprite/sprite-png.png' 'educ';
+@fac-name: 'fac';
+@fac-x: 0px;
+@fac-y: 142px;
+@fac-offset-x: 0px;
+@fac-offset-y: -142px;
+@fac-width: 142px;
+@fac-height: 142px;
+@fac-total-width: 426px;
+@fac-total-height: 426px;
+@fac-image: '../images/sprite/sprite-png.png';
+@fac: 0px 142px 0px -142px 142px 142px 426px 426px '../images/sprite/sprite-png.png' 'fac';
+@fitness-name: 'fitness';
+@fitness-x: 142px;
+@fitness-y: 142px;
+@fitness-offset-x: -142px;
+@fitness-offset-y: -142px;
+@fitness-width: 142px;
+@fitness-height: 142px;
+@fitness-total-width: 426px;
+@fitness-total-height: 426px;
+@fitness-image: '../images/sprite/sprite-png.png';
+@fitness: 142px 142px -142px -142px 142px 142px 426px 426px '../images/sprite/sprite-png.png' 'fitness';
+@guitar-name: 'guitar';
+@guitar-x: 284px;
+@guitar-y: 0px;
+@guitar-offset-x: -284px;
+@guitar-offset-y: 0px;
+@guitar-width: 142px;
+@guitar-height: 142px;
+@guitar-total-width: 426px;
+@guitar-total-height: 426px;
+@guitar-image: '../images/sprite/sprite-png.png';
+@guitar: 284px 0px -284px 0px 142px 142px 426px 426px '../images/sprite/sprite-png.png' 'guitar';
+@i-web-name: 'i-web';
+@i-web-x: 284px;
+@i-web-y: 142px;
+@i-web-offset-x: -284px;
+@i-web-offset-y: -142px;
+@i-web-width: 142px;
+@i-web-height: 142px;
+@i-web-total-width: 426px;
+@i-web-total-height: 426px;
+@i-web-image: '../images/sprite/sprite-png.png';
+@i-web: 284px 142px -284px -142px 142px 142px 426px 426px '../images/sprite/sprite-png.png' 'i-web';
+@reading-name: 'reading';
+@reading-x: 0px;
+@reading-y: 284px;
+@reading-offset-x: 0px;
+@reading-offset-y: -284px;
+@reading-width: 142px;
+@reading-height: 142px;
+@reading-total-width: 426px;
+@reading-total-height: 426px;
+@reading-image: '../images/sprite/sprite-png.png';
+@reading: 0px 284px 0px -284px 142px 142px 426px 426px '../images/sprite/sprite-png.png' 'reading';
+@self-cultivation-name: 'self-cultivation';
+@self-cultivation-x: 142px;
+@self-cultivation-y: 284px;
+@self-cultivation-offset-x: -142px;
+@self-cultivation-offset-y: -284px;
+@self-cultivation-width: 142px;
+@self-cultivation-height: 142px;
+@self-cultivation-total-width: 426px;
+@self-cultivation-total-height: 426px;
+@self-cultivation-image: '../images/sprite/sprite-png.png';
+@self-cultivation: 142px 284px -142px -284px 142px 142px 426px 426px '../images/sprite/sprite-png.png' 'self-cultivation';
+@specs-name: 'specs';
+@specs-x: 284px;
+@specs-y: 284px;
+@specs-offset-x: -284px;
+@specs-offset-y: -284px;
+@specs-width: 142px;
+@specs-height: 142px;
+@specs-total-width: 426px;
+@specs-total-height: 426px;
+@specs-image: '../images/sprite/sprite-png.png';
+@specs: 284px 284px -284px -284px 142px 142px 426px 426px '../images/sprite/sprite-png.png' 'specs';
+@bike-2x-name: 'bike-2x';
+@bike-2x-x: 0px;
+@bike-2x-y: 0px;
+@bike-2x-offset-x: 0px;
+@bike-2x-offset-y: 0px;
+@bike-2x-width: 284px;
+@bike-2x-height: 284px;
+@bike-2x-total-width: 852px;
+@bike-2x-total-height: 852px;
+@bike-2x-image: '../images/sprite/sprite-png-retina.png';
+@bike-2x: 0px 0px 0px 0px 284px 284px 852px 852px '../images/sprite/sprite-png-retina.png' 'bike-2x';
+@educ-2x-name: 'educ-2x';
+@educ-2x-x: 284px;
+@educ-2x-y: 0px;
+@educ-2x-offset-x: -284px;
+@educ-2x-offset-y: 0px;
+@educ-2x-width: 284px;
+@educ-2x-height: 284px;
+@educ-2x-total-width: 852px;
+@educ-2x-total-height: 852px;
+@educ-2x-image: '../images/sprite/sprite-png-retina.png';
+@educ-2x: 284px 0px -284px 0px 284px 284px 852px 852px '../images/sprite/sprite-png-retina.png' 'educ-2x';
+@fac-2x-name: 'fac-2x';
+@fac-2x-x: 0px;
+@fac-2x-y: 284px;
+@fac-2x-offset-x: 0px;
+@fac-2x-offset-y: -284px;
+@fac-2x-width: 284px;
+@fac-2x-height: 284px;
+@fac-2x-total-width: 852px;
+@fac-2x-total-height: 852px;
+@fac-2x-image: '../images/sprite/sprite-png-retina.png';
+@fac-2x: 0px 284px 0px -284px 284px 284px 852px 852px '../images/sprite/sprite-png-retina.png' 'fac-2x';
+@fitness-2x-name: 'fitness-2x';
+@fitness-2x-x: 284px;
+@fitness-2x-y: 284px;
+@fitness-2x-offset-x: -284px;
+@fitness-2x-offset-y: -284px;
+@fitness-2x-width: 284px;
+@fitness-2x-height: 284px;
+@fitness-2x-total-width: 852px;
+@fitness-2x-total-height: 852px;
+@fitness-2x-image: '../images/sprite/sprite-png-retina.png';
+@fitness-2x: 284px 284px -284px -284px 284px 284px 852px 852px '../images/sprite/sprite-png-retina.png' 'fitness-2x';
+@guitar-2x-name: 'guitar-2x';
+@guitar-2x-x: 568px;
+@guitar-2x-y: 0px;
+@guitar-2x-offset-x: -568px;
+@guitar-2x-offset-y: 0px;
+@guitar-2x-width: 284px;
+@guitar-2x-height: 284px;
+@guitar-2x-total-width: 852px;
+@guitar-2x-total-height: 852px;
+@guitar-2x-image: '../images/sprite/sprite-png-retina.png';
+@guitar-2x: 568px 0px -568px 0px 284px 284px 852px 852px '../images/sprite/sprite-png-retina.png' 'guitar-2x';
+@i-web-2x-name: 'i-web-2x';
+@i-web-2x-x: 568px;
+@i-web-2x-y: 284px;
+@i-web-2x-offset-x: -568px;
+@i-web-2x-offset-y: -284px;
+@i-web-2x-width: 284px;
+@i-web-2x-height: 284px;
+@i-web-2x-total-width: 852px;
+@i-web-2x-total-height: 852px;
+@i-web-2x-image: '../images/sprite/sprite-png-retina.png';
+@i-web-2x: 568px 284px -568px -284px 284px 284px 852px 852px '../images/sprite/sprite-png-retina.png' 'i-web-2x';
+@reading-2x-name: 'reading-2x';
+@reading-2x-x: 0px;
+@reading-2x-y: 568px;
+@reading-2x-offset-x: 0px;
+@reading-2x-offset-y: -568px;
+@reading-2x-width: 284px;
+@reading-2x-height: 284px;
+@reading-2x-total-width: 852px;
+@reading-2x-total-height: 852px;
+@reading-2x-image: '../images/sprite/sprite-png-retina.png';
+@reading-2x: 0px 568px 0px -568px 284px 284px 852px 852px '../images/sprite/sprite-png-retina.png' 'reading-2x';
+@self-cultivation-2x-name: 'self-cultivation-2x';
+@self-cultivation-2x-x: 284px;
+@self-cultivation-2x-y: 568px;
+@self-cultivation-2x-offset-x: -284px;
+@self-cultivation-2x-offset-y: -568px;
+@self-cultivation-2x-width: 284px;
+@self-cultivation-2x-height: 284px;
+@self-cultivation-2x-total-width: 852px;
+@self-cultivation-2x-total-height: 852px;
+@self-cultivation-2x-image: '../images/sprite/sprite-png-retina.png';
+@self-cultivation-2x: 284px 568px -284px -568px 284px 284px 852px 852px '../images/sprite/sprite-png-retina.png' 'self-cultivation-2x';
+@specs-2x-name: 'specs-2x';
+@specs-2x-x: 568px;
+@specs-2x-y: 568px;
+@specs-2x-offset-x: -568px;
+@specs-2x-offset-y: -568px;
+@specs-2x-width: 284px;
+@specs-2x-height: 284px;
+@specs-2x-total-width: 852px;
+@specs-2x-total-height: 852px;
+@specs-2x-image: '../images/sprite/sprite-png-retina.png';
+@specs-2x: 568px 568px -568px -568px 284px 284px 852px 852px '../images/sprite/sprite-png-retina.png' 'specs-2x';
+@spritesheet-width: 426px;
+@spritesheet-height: 426px;
+@spritesheet-image: '../images/sprite/sprite-png.png';
+@spritesheet-sprites: @bike @educ @fac @fitness @guitar @i-web @reading @self-cultivation @specs;
+@spritesheet: 426px 426px '../images/sprite/sprite-png.png' @spritesheet-sprites;
+@retina-spritesheet-width: 852px;
+@retina-spritesheet-height: 852px;
+@retina-spritesheet-image: '../images/sprite/sprite-png-retina.png';
+@retina-spritesheet-sprites: @bike-2x @educ-2x @fac-2x @fitness-2x @guitar-2x @i-web-2x @reading-2x @self-cultivation-2x @specs-2x;
+@retina-spritesheet: 852px 852px '../images/sprite/sprite-png-retina.png' @retina-spritesheet-sprites;
+
+/*
+These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+*/
+@bike-group-name: 'bike';
+@bike-group: 'bike' @bike @bike-2x;
+@educ-group-name: 'educ';
+@educ-group: 'educ' @educ @educ-2x;
+@fac-group-name: 'fac';
+@fac-group: 'fac' @fac @fac-2x;
+@fitness-group-name: 'fitness';
+@fitness-group: 'fitness' @fitness @fitness-2x;
+@guitar-group-name: 'guitar';
+@guitar-group: 'guitar' @guitar @guitar-2x;
+@i-web-group-name: 'i-web';
+@i-web-group: 'i-web' @i-web @i-web-2x;
+@reading-group-name: 'reading';
+@reading-group: 'reading' @reading @reading-2x;
+@self-cultivation-group-name: 'self-cultivation';
+@self-cultivation-group: 'self-cultivation' @self-cultivation @self-cultivation-2x;
+@specs-group-name: 'specs';
+@specs-group: 'specs' @specs @specs-2x;
+@retina-groups: @bike-group @educ-group @fac-group @fitness-group @guitar-group @i-web-group @reading-group @self-cultivation-group @specs-group;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  @sprite-image-bare: ~`"@{sprite-image}".slice(1, -1)`;
+  background-image: url(@sprite-image-bare);
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `retina-sprite` class sets up rules and a media query for a sprite/retina sprite.
+  It should be used with a "retina group" variable.
+
+The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+@icon-home-group: 'icon-home' @icon-home @icon-home-2x;
+
+.icon-home {
+  .retina-sprite(@icon-home-group);
+}
+*/
+.sprite-background-size(@sprite) {
+  @sprite-total-width: extract(@sprite, 7);
+  @sprite-total-height: extract(@sprite, 8);
+  background-size: @sprite-total-width @sprite-total-height;
+}
+
+.retina-sprite(@retina-group) {
+  @normal-sprite: extract(@retina-group, 2);
+  @retina-sprite: extract(@retina-group, 3);
+  .sprite(@normal-sprite);
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+    .sprite-image(@retina-sprite);
+    .sprite-background-size(@normal-sprite);
+  }
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: e(extract(@sprite, 10));
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}
+
+/*
+The `.retina-sprites` mixin generates a CSS rule and media query for retina groups
+  This yields the same output as CSS retina template but can be overridden in LESS
+
+.retina-sprites(@retina-groups);
+*/
+.retina-sprites(@retina-groups, @i: 1) when (@i <= length(@retina-groups)) {
+  @retina-group: extract(@retina-groups, @i);
+  @sprite-name: e(extract(@retina-group, 1));
+  .@{sprite-name} {
+    .retina-sprite(@retina-group);
+  }
+  .retina-sprites(@retina-groups, @i + 1);
+}

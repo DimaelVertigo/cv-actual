@@ -62,8 +62,4 @@ Thumbs.db
 .idea/workspace.xml
 gulpfile.js
 package.json
-public/index.html
-public/scripts/
-public/styles/
-src/styles/
 package-lock.json

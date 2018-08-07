@@ -1,0 +1,567 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+/*
+These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+*/
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `retina-sprite` class sets up rules and a media query for a sprite/retina sprite.
+  It should be used with a "retina group" variable.
+
+The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+@icon-home-group: 'icon-home' @icon-home @icon-home-2x;
+
+.icon-home {
+  .retina-sprite(@icon-home-group);
+}
+*/
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+/*
+The `.retina-sprites` mixin generates a CSS rule and media query for retina groups
+  This yields the same output as CSS retina template but can be overridden in LESS
+
+.retina-sprites(@retina-groups);
+*/
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  color: #192f32;
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 35px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  overflow: hidden;
+}
+@media only screen and (min-width : 320px) and (max-width : 768px) {
+  .wrapper {
+    font-size: 1.7rem;
+  }
+}
+a {
+  text-decoration: none;
+  color: #192f32;
+}
+.title {
+  height: 40px;
+  background-color: #64989a;
+  color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-left: 33px;
+  position: relative;
+  font-weight: 300;
+  margin: 20px 0;
+}
+.title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #feaf77;
+  width: 10px;
+  height: 40px;
+}
+.small {
+  line-height: 20px;
+  color: #4e4e4e;
+}
+.site-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.site-header__avatar {
+  width: 150px;
+  height: 150px;
+  border: 6px solid #feaf77;
+  border-radius: 50%;
+  overflow: hidden;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  transition: all 0.2s ease-out;
+  position: relative;
+}
+@media print {
+}
+.site-header__avatar:hover {
+  border: 6px solid #64989a;
+}
+.site-header__avatar:hover .photo {
+  transform: scale(2.3);
+}
+.site-header__name {
+  font-size: 1.9rem;
+  margin-top: 15px;
+  color: #feaf77;
+  font-weight: 700;
+}
+.site-header__position {
+  margin-top: 11px;
+  color: #64989a;
+  font-size: 1.9rem;
+}
+.site-header__description {
+  text-align: center;
+  margin-top: 33px;
+}
+.photo {
+  background: url(../images/ava.jpg) center 29px no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  transform: scale(1.9);
+  transition: all 0.5s ease-out;
+}
+.education {
+  margin-top: 160px;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%;
+}
+.education__line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: #64989a;
+}
+.education__line::before,
+.education__line::after {
+  content: '';
+  background-color: #64989a;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  position: absolute;
+  top: -8px;
+}
+.education__line::before {
+  left: 0;
+}
+.education__line::after {
+  right: 0;
+}
+.education__info {
+  text-align: center;
+  margin: 0 27px;
+  padding-top: 27px;
+  position: relative;
+  width: 260px;
+}
+.education__info::before {
+  content: '';
+  width: 22px;
+  height: 22px;
+  background-color: #f0f4f8;
+  border: 2px solid #64989a;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: calc(50% - 12px);
+}
+@media only screen and (min-width : 320px) and (max-width : 768px) {
+  .education__text {
+    font-size: 1.2rem;
+  }
+}
+.education__icon {
+  position: absolute;
+  top: -130px;
+  left: calc(50% - 50px);
+}
+@media only screen and (min-width : 320px) and (max-width : 768px) {
+  .education__icon {
+    top: -100px;
+    left: calc(50% - 35px);
+  }
+}
+.education__icon svg {
+  width: 100px;
+  height: 100px;
+}
+@media only screen and (min-width : 320px) and (max-width : 768px) {
+  .education__icon svg {
+    width: 70px;
+    height: 70px;
+  }
+}
+.info-experience {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-top: 35px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.info--big {
+  width: 40%;
+}
+.info__work {
+  margin-top: 25px;
+}
+.info__personal {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  margin-top: 25px;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.info__key {
+  min-width: 70px;
+  display: block;
+  font-size: 3rem;
+  line-height: 3.2rem;
+  font-weight: bold;
+  color: #64989a;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.info__key svg {
+  width: 50px;
+  height: 50px;
+}
+.info__value {
+  margin-left: 20px;
+}
+.main-skills {
+  margin-top: 50px;
+}
+.prof-skills {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+.prof-skills__group {
+  margin-top: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.prof-skills__rate {
+  display: -ms-flexbox;
+  display: flex;
+  width: 102px;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.prof-skills__exp {
+  width: 14px;
+  height: 15px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid #feaf77;
+}
+.prof-skills__exp--active {
+  background-color: #feaf77;
+}
+.info {
+  margin: 0 15px;
+}
+@media only screen and (min-width : 320px) and (max-width : 768px) {
+  .info {
+    width: 100%;
+  }
+}
+.info--small {
+  width: 40%;
+}
+@media only screen and (min-width : 320px) and (max-width : 768px) {
+  .info--small {
+    width: 100%;
+  }
+}
+.workplace__name {
+  font-style: italic;
+}
+.workplace__link {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.workplace__link:hover .workplace__position::before {
+  left: -15px;
+}
+.workplace__link:hover .workplace__position::after {
+  right: -15px;
+}
+.workplace__icon {
+  margin-right: 25px;
+  min-width: 100px;
+}
+.workplace__icon img {
+  width: 100px;
+}
+.workplace__position {
+  margin-left: 10px;
+  position: relative;
+  display: inline-block;
+  font-style: italic;
+}
+.workplace__position::before,
+.workplace__position::after {
+  transition: all 0.2s ease-out;
+  position: absolute;
+}
+.workplace__position::before {
+  content: '[ ';
+  left: -10px;
+}
+.workplace__position::after {
+  content: ' ]';
+  right: -10px;
+}
+.hobbies {
+  padding: 25px 15px;
+}
+.hobbies__list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.hobbies__item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center;
+}
+@media only screen and (min-width : 320px) and (max-width : 768px) {
+  .hobbies__item {
+    margin-bottom: 30px;
+  }
+}
+.hobbies__item:hover svg {
+  transform: scale(1.1);
+}
+.hobbies__icon svg {
+  width: 100px;
+  height: 100px;
+  transition: all 0.2s ease-out;
+}
