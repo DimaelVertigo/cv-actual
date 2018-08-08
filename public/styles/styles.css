@@ -202,10 +202,7 @@ html {
 html,
 body {
   height: 100%;
-  -webkit-user-select: text;
-     -moz-user-select: text;
-      -ms-user-select: text;
-          user-select: text;
+  user-select: text;
   font-family: 'Roboto', 'Arial', sans-serif;
   color: #192f32;
   font-size: 1rem;
@@ -218,10 +215,8 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 35px 0;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
+  flex-direction: column;
   overflow: hidden;
 }
 @media only screen and (min-width : 320px) and (max-width : 768px) {
@@ -237,10 +232,8 @@ a {
   height: 40px;
   background-color: #64989a;
   color: #fff;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   padding-left: 33px;
   position: relative;
   font-weight: 300;
@@ -260,14 +253,10 @@ a {
   color: #4e4e4e;
 }
 .site-header {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .site-header__avatar {
   width: 150px;
@@ -275,12 +264,9 @@ a {
   border: 6px solid #feaf77;
   border-radius: 50%;
   overflow: hidden;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
+  align-items: center;
+  justify-content: center;
   transition: all 0.2s ease-out;
   position: relative;
 }
@@ -318,10 +304,8 @@ a {
 .education {
   margin-top: 160px;
   position: relative;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   width: 100%;
 }
 .education__line {
@@ -393,13 +377,10 @@ a {
   }
 }
 .info-experience {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  justify-content: space-between;
   margin-top: 35px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .info--big {
   width: 40%;
@@ -408,15 +389,11 @@ a {
   margin-top: 25px;
 }
 .info__personal {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
   margin-top: 25px;
-  -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
 }
 .info__key {
   min-width: 70px;
@@ -425,10 +402,8 @@ a {
   line-height: 3.2rem;
   font-weight: bold;
   color: #64989a;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
 }
 .info__key svg {
   width: 50px;
@@ -441,29 +416,21 @@ a {
   margin-top: 50px;
 }
 .prof-skills {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
 }
 .prof-skills__group {
   margin-top: 20px;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 .prof-skills__rate {
-  display: -ms-flexbox;
   display: flex;
   width: 102px;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  justify-content: space-between;
 }
 .prof-skills__exp {
   width: 14px;
@@ -495,10 +462,8 @@ a {
   font-style: italic;
 }
 .workplace__link {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
 }
 .workplace__link:hover .workplace__position::before {
   left: -15px;
@@ -536,20 +501,14 @@ a {
   padding: 25px 15px;
 }
 .hobbies__list {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .hobbies__item {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 @media only screen and (min-width : 320px) and (max-width : 768px) {
