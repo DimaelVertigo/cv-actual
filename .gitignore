@@ -56,10 +56,4 @@ yarn-error.log*
 .Trashes
 ehthumbs.db
 Thumbs.db
-.idea/cv-actual.iml
-.idea/inspectionProfiles/
-.idea/modules.xml
-.idea/workspace.xml
-gulpfile.js
-package.json
-package-lock.json
+.idea/
