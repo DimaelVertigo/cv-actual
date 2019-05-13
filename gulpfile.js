@@ -4,13 +4,11 @@ less = require('gulp-less'),
   browserSync = require('browser-sync'),
   autoprefixer = require('gulp-autoprefixer'),
   sourcemaps = require('gulp-sourcemaps'),
-  imagemin = require('gulp-tinypng'),
   uglify = require('gulp-uglify'),
   notify = require('gulp-notify'),
   spritesmith = require('gulp.spritesmith'),
   babel = require('gulp-babel'),
   babelify = require('babelify'),
-  browserify = require('gulp-browserify'),
   validator = require('gulp-html'),
   fileinclude = require('gulp-file-include');
 
@@ -109,10 +107,7 @@ spriteData.css.pipe(gulp.dest(`${paths.src}/styles/`));
  */
 gulp.task('javascript', () => (
   gulp.src(`${paths.src}scripts/scripts.js`)
-    .pipe(browserify({
-      debug: true,
-      transform: [babelify.configure({presets: ['es2015', 'import-export']})]
-    }))
+
     .pipe(babel({
       presets: ['es2015']
     }))
