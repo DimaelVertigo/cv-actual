@@ -497,6 +497,10 @@ a {
   content: ' ]';
   right: -10px;
 }
+.workplace__stack {
+  font-style: italic;
+  font-size: .9rem;
+}
 .hobbies {
   padding: 25px 15px;
 }
